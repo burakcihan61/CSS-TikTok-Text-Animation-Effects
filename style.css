@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 3em;
+    animation: animate 0.5s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        text-shadow: -2.5px -2.5px 0 #0ff, 2.5px 2.5px 0 #f00;
+    }
+    25%{
+        text-shadow: 2.5px 2.5px 0 #0ff, -2.5px -2.5px 0 #f00;
+    }
+    50%{
+        text-shadow: 2.5px -2.5px 0 #0ff, -2.5px 2.5px 0 #f00;
+    }
+    75%{
+        text-shadow: -2.5px 2.5px 0 #0ff, 2.5px -2.5px 0 #f00;
+    }
+}
